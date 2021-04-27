@@ -1,12 +1,13 @@
 import Control.Monad
+import Data.Char
 import Data.Int
 
-solve :: Int64 -> Int64
+solve :: Int64 -> Int
 solve n
   | n `mod` 2050 /= 0 = -1
   | otherwise = bitsSum $ quot n 2050
   where
-    bitsSum i = sum $ read <$> (\c -> [c]) <$> show i
+    bitsSum i = sum $ (\c -> ord c - ord '0') <$> show i
 
 solveIO :: IO ()
 solveIO = do
