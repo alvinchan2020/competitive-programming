@@ -12,8 +12,8 @@ solve n
 solveIO :: IO ()
 solveIO = do
   l <- getLine
-  let t = read l :: Int64
-  putStr $ show (solve t) ++ "\n"
+  let n = read l :: Int64
+  putStr $ show (solve n) ++ "\n"
 
 main :: IO ()
 main = do
