@@ -1,2 +1,2 @@
 # competitive-programming
-Practicing competitive programming.
+Just practicing competitive programming.
